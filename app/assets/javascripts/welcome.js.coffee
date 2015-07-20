@@ -7,5 +7,4 @@ window.React = require 'react'
 window.Reflux = require 'reflux'
 
 $ ->
-  console.log('well there, react stuff should go here')
   require('./flux/welcome/initializer')()

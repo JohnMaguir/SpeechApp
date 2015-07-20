@@ -1,14 +1,15 @@
 { div, span } = React.DOM
+ConnectStoreComponent = require '../utils/connect_store_component'
 
 class Welcome extends React.Component
-  @defaultProps:
-    text: "Well if it isn't react"
   @propTypes:
     text: React.PropTypes.string
+
+  @defaultProps:
+    text: "Well if it isn't react"
 
   render: ->
     div {},
       span {}, @props.text
 
-
-module.exports = React.createFactory(Welcome)
+module.exports = (store) -> ConnectStoreComponent(Welcome, store)

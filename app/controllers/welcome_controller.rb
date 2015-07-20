@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @message = 'Help me Alex'
+    @message = 'First message from controller'
   end
 end
