@@ -1,5 +1,5 @@
 {
-  "name": "onepage",
+  "name": "speechapp",
   "dependencies": {
     "browserify": "~> 10.2",
     "browserify-incremental": "~>3.0",
